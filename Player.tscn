@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://d26tavymkf5fa"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1"]
+
+[sub_resource type="CapsuleMesh" id="1"]
+radial_segments = 16
+rings = 4
+
+[sub_resource type="CapsuleShape3D" id="2"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1")
+ACCEL_DEFAULT = 6.0
+ACCEL_AIR = 3.0
+jump = 7.0
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0)
+mesh = SubResource("1")
+
+[node name="CollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0)
+shape = SubResource("2")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Cam_Pivot" type="Node3D" parent="Head"]
+transform = Transform3D(1, 0, 0, 0, 0.884353, 0.466819, 0, -0.466819, 0.884353, 0, 0.974086, 0)
+
+[node name="ClippedCamera" type="ClippedCamera" parent="Head/Cam_Pivot"]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+editor_description = ""
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 7)
+script = null
