@@ -8,26 +8,11 @@
 
 config_version=5
 
-_global_script_classes=[{
-"base": "ResourceFormatLoader",
-"class": "HTerrainDataLoader",
-"language": "GDScript",
-"path": "res://Addons/zylann.hterrain/hterrain_resource_loader.gd"
-}, {
-"base": "ResourceFormatSaver",
-"class": "HTerrainDataSaver",
-"language": "GDScript",
-"path": "res://Addons/zylann.hterrain/hterrain_resource_saver.gd"
-}]
-_global_script_class_icons={
-"HTerrainDataLoader": "",
-"HTerrainDataSaver": ""
-}
-
 [application]
 
-config/name="godot-grass"
-run/main_scene="res://Scenes/Scene.tscn"
+config/name="CO2 Breaks the World!"
+config/description="A visualizer for how CO2 levels impact select environments"
+run/main_scene="res://Scenes/env1.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.png"
 
@@ -41,7 +26,7 @@ project/assembly_name="CO2 Breaks the World!"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/scatter/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg")
+enabled=PackedStringArray("res://addons/simplegrasstextured/plugin.cfg")
 
 [input]
 

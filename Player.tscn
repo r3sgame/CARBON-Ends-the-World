@@ -10,9 +10,6 @@ rings = 4
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1")
-ACCEL_DEFAULT = 6.0
-ACCEL_AIR = 3.0
-jump = 7.0
 
 [node name="Mesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, 0.5, 0, -0.5, -2.18557e-08, 0, 0, 0)

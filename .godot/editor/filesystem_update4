@@ -1,5 +1,6 @@
-res://env1.tscn
 res://Scenes/env1.tscn
-res://Assets/Shaders/grass_shadermaterial.tres
+res://addons/simplegrasstextured/shaders/grass.gdshader
+res://new_placeholder_material.tres
 res://Player.tscn
-res://Scenes/Scene.tscn
+res://default_env.tres
+res://Scenes/CamerManager.gd
