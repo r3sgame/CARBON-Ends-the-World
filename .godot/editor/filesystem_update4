@@ -1,1 +1,9 @@
 res://Scenes/env1.tscn
+res://Scripts/GrassSlider.gd
+res://Scenes/env2.tscn
+res://Assets/WaterShader.tres
+res://Scripts/SeaSlider.gd
+res://Scenes/env3.tscn
+res://Scripts/GreenhouseBox.gd
+res://Scenes/menu.tscn
+res://Scripts/MeshRotater.gd
