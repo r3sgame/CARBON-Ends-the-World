@@ -12,8 +12,10 @@ config_version=5
 
 config/name="CO2 Breaks the World!"
 config/description="A visualizer for how CO2 levels impact select environments"
-run/main_scene="res://Scenes/env1.tscn"
+run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://Assets/logo.png"
 config/icon="res://icon.png"
 
 [autoload]

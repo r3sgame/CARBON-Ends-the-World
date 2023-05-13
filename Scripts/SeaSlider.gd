@@ -5,16 +5,21 @@ var water
 var cO2
 var tempChange
 
+var menuButton
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	water = get_node("/root/Node3D/Water")
 	grass = get_node("/root/Node3D/MeshInstance3D/SimpleGrassTextured")
 	cO2 = get_node("/root/Node3D/GrassUI/CO2")
 	tempChange = get_node("/root/Node3D/GrassUI/Temp Change")
+	menuButton = get_node("/root/Node3D/GrassUI/Button")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if(menuButton.button_pressed):
+		get_tree().change_scene_to_file("res://Scenes/menu.tscn")
 	if(value_changed):
 		grass.scale_h = value * 0.01 + 1
 		water.position = Vector3(water.position.x, (value/50) + 7.5, water.position.z)
